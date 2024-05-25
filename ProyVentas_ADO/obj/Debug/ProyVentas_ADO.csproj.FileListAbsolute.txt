@@ -1,0 +1,13 @@
+C:\Users\DAVIDWILD\Desktop\ISIL- V\NET\laboratorio03\DemoVentas_4Capas\ProyVentas_ADO\obj\Debug\ProyVentas_ADO.csproj.AssemblyReference.cache
+C:\Users\DAVIDWILD\Desktop\ISIL- V\NET\laboratorio03\DemoVentas_4Capas\ProyVentas_ADO\obj\Debug\ProyVentas_ADO.csproj.CoreCompileInputs.cache
+C:\Users\DAVIDWILD\Desktop\ISIL- V\NET\laboratorio03\DemoVentas_4Capas\ProyVentas_ADO\bin\Debug\ProyVentas_ADO.dll
+C:\Users\DAVIDWILD\Desktop\ISIL- V\NET\laboratorio03\DemoVentas_4Capas\ProyVentas_ADO\bin\Debug\ProyVentas_ADO.pdb
+C:\Users\DAVIDWILD\Desktop\ISIL- V\NET\laboratorio03\DemoVentas_4Capas\ProyVentas_ADO\bin\Debug\ProyVentas_BE.dll
+C:\Users\DAVIDWILD\Desktop\ISIL- V\NET\laboratorio03\DemoVentas_4Capas\ProyVentas_ADO\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\DAVIDWILD\Desktop\ISIL- V\NET\laboratorio03\DemoVentas_4Capas\ProyVentas_ADO\bin\Debug\System.Data.SqlClient.dll
+C:\Users\DAVIDWILD\Desktop\ISIL- V\NET\laboratorio03\DemoVentas_4Capas\ProyVentas_ADO\bin\Debug\ProyVentas_BE.pdb
+C:\Users\DAVIDWILD\Desktop\ISIL- V\NET\laboratorio03\DemoVentas_4Capas\ProyVentas_ADO\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\DAVIDWILD\Desktop\ISIL- V\NET\laboratorio03\DemoVentas_4Capas\ProyVentas_ADO\bin\Debug\System.Data.SqlClient.xml
+C:\Users\DAVIDWILD\Desktop\ISIL- V\NET\laboratorio03\DemoVentas_4Capas\ProyVentas_ADO\obj\Debug\ProyVentas_ADO.csproj.CopyComplete
+C:\Users\DAVIDWILD\Desktop\ISIL- V\NET\laboratorio03\DemoVentas_4Capas\ProyVentas_ADO\obj\Debug\ProyVentas_ADO.dll
+C:\Users\DAVIDWILD\Desktop\ISIL- V\NET\laboratorio03\DemoVentas_4Capas\ProyVentas_ADO\obj\Debug\ProyVentas_ADO.pdb

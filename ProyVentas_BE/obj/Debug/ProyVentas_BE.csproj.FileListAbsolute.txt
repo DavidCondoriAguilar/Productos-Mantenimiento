@@ -1,0 +1,6 @@
+C:\Users\DAVIDWILD\Desktop\ISIL- V\NET\laboratorio03\DemoVentas_4Capas\ProyVentas_BE\bin\Debug\ProyVentas_BE.dll
+C:\Users\DAVIDWILD\Desktop\ISIL- V\NET\laboratorio03\DemoVentas_4Capas\ProyVentas_BE\bin\Debug\ProyVentas_BE.pdb
+C:\Users\DAVIDWILD\Desktop\ISIL- V\NET\laboratorio03\DemoVentas_4Capas\ProyVentas_BE\obj\Debug\ProyVentas_BE.csproj.AssemblyReference.cache
+C:\Users\DAVIDWILD\Desktop\ISIL- V\NET\laboratorio03\DemoVentas_4Capas\ProyVentas_BE\obj\Debug\ProyVentas_BE.csproj.CoreCompileInputs.cache
+C:\Users\DAVIDWILD\Desktop\ISIL- V\NET\laboratorio03\DemoVentas_4Capas\ProyVentas_BE\obj\Debug\ProyVentas_BE.dll
+C:\Users\DAVIDWILD\Desktop\ISIL- V\NET\laboratorio03\DemoVentas_4Capas\ProyVentas_BE\obj\Debug\ProyVentas_BE.pdb
