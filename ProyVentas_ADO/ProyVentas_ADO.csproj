@@ -52,6 +52,8 @@
     <Compile Include="ConexionADO.cs" />
     <Compile Include="ProductoADO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProveedorADO.cs" />
+    <Compile Include="UbigeoADO.cs" />
     <Compile Include="UnidadMedidaADO.cs" />
   </ItemGroup>
   <ItemGroup>
