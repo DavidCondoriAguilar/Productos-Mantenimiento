@@ -19,7 +19,7 @@ namespace ProyVentas_GUI
 
         private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ProveedorMan01 prov01 = new ProveedorMan01();
+            ProductoMan01 prov01 = new ProductoMan01();
             prov01.MdiParent = this;
             prov01.Show();
         }
@@ -53,10 +53,10 @@ namespace ProyVentas_GUI
             //frmExcel.Show();
         }
 
-        private void MDIPrincipal_Load(object sender, EventArgs e)
-        {
-            this.lblUsuario.Text  = clsCredenciales.Usuario;
-        }
+        //private void MDIPrincipal_Load(object sender, EventArgs e)
+        //{
+        //    this.lblUsuario.Text  = clsCredenciales.Usuario;
+        //}
 
         private void MDIPrincipal_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -72,6 +72,11 @@ namespace ProyVentas_GUI
         private void MDIPrincipal_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void mantenimientosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -28,125 +28,124 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dtgDatos = new System.Windows.Forms.DataGridView();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnActualizar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtFiltro = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblRegistros = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgDatos)).BeginInit();
-            this.SuspendLayout();
+            dtgDatos = new DataGridView();
+            btnAgregar = new Button();
+            btnActualizar = new Button();
+            btnEliminar = new Button();
+            btnCerrar = new Button();
+            label1 = new Label();
+            txtFiltro = new TextBox();
+            label2 = new Label();
+            lblRegistros = new Label();
+            ((System.ComponentModel.ISupportInitialize)dtgDatos).BeginInit();
+            SuspendLayout();
             // 
             // dtgDatos
             // 
-            this.dtgDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgDatos.Location = new System.Drawing.Point(12, 69);
-            this.dtgDatos.Name = "dtgDatos";
-            this.dtgDatos.RowTemplate.Height = 25;
-            this.dtgDatos.Size = new System.Drawing.Size(971, 340);
-            this.dtgDatos.TabIndex = 0;
+            dtgDatos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgDatos.Location = new Point(12, 69);
+            dtgDatos.Name = "dtgDatos";
+            dtgDatos.RowTemplate.Height = 25;
+            dtgDatos.Size = new Size(971, 340);
+            dtgDatos.TabIndex = 0;
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(509, 466);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(97, 32);
-            this.btnAgregar.TabIndex = 1;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            btnAgregar.Location = new Point(509, 466);
+            btnAgregar.Name = "btnAgregar";
+            btnAgregar.Size = new Size(97, 32);
+            btnAgregar.TabIndex = 1;
+            btnAgregar.Text = "Agregar";
+            btnAgregar.UseVisualStyleBackColor = true;
+            btnAgregar.Click += btnAgregar_Click;
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(625, 466);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(97, 32);
-            this.btnActualizar.TabIndex = 1;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
-            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            btnActualizar.Location = new Point(625, 466);
+            btnActualizar.Name = "btnActualizar";
+            btnActualizar.Size = new Size(97, 32);
+            btnActualizar.TabIndex = 1;
+            btnActualizar.Text = "Actualizar";
+            btnActualizar.UseVisualStyleBackColor = true;
+            btnActualizar.Click += btnActualizar_Click;
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(740, 466);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(97, 32);
-            this.btnEliminar.TabIndex = 1;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Location = new Point(740, 466);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(97, 32);
+            btnEliminar.TabIndex = 1;
+            btnEliminar.Text = "Eliminar";
+            btnEliminar.UseVisualStyleBackColor = true;
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(886, 466);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(97, 32);
-            this.btnCerrar.TabIndex = 1;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
+            btnCerrar.Location = new Point(886, 466);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(97, 32);
+            btnCerrar.TabIndex = 1;
+            btnCerrar.Text = "Cerrar";
+            btnCerrar.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 15);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Ingrese filtro por descripcion:";
+            label1.AutoSize = true;
+            label1.Location = new Point(20, 27);
+            label1.Name = "label1";
+            label1.Size = new Size(161, 15);
+            label1.TabIndex = 2;
+            label1.Text = "Ingrese filtro por descripcion:";
             // 
             // txtFiltro
             // 
-            this.txtFiltro.Location = new System.Drawing.Point(215, 24);
-            this.txtFiltro.Name = "txtFiltro";
-            this.txtFiltro.Size = new System.Drawing.Size(314, 23);
-            this.txtFiltro.TabIndex = 3;
-            this.txtFiltro.TextChanged += new System.EventHandler(this.txtFiltro_TextChanged);
+            txtFiltro.Location = new Point(215, 24);
+            txtFiltro.Name = "txtFiltro";
+            txtFiltro.Size = new Size(314, 23);
+            txtFiltro.TabIndex = 3;
+            txtFiltro.TextChanged += txtFiltro_TextChanged;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(820, 421);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 15);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Registros:";
+            label2.AutoSize = true;
+            label2.Location = new Point(820, 421);
+            label2.Name = "label2";
+            label2.Size = new Size(58, 15);
+            label2.TabIndex = 2;
+            label2.Text = "Registros:";
             // 
             // lblRegistros
             // 
-            this.lblRegistros.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblRegistros.Location = new System.Drawing.Point(899, 421);
-            this.lblRegistros.Name = "lblRegistros";
-            this.lblRegistros.Size = new System.Drawing.Size(84, 22);
-            this.lblRegistros.TabIndex = 2;
-            this.lblRegistros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            lblRegistros.BorderStyle = BorderStyle.FixedSingle;
+            lblRegistros.Location = new Point(899, 421);
+            lblRegistros.Name = "lblRegistros";
+            lblRegistros.Size = new Size(84, 22);
+            lblRegistros.TabIndex = 2;
+            lblRegistros.TextAlign = ContentAlignment.MiddleRight;
             // 
             // ProductoMan01
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(995, 510);
-            this.Controls.Add(this.txtFiltro);
-            this.Controls.Add(this.lblRegistros);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnCerrar);
-            this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.btnActualizar);
-            this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.dtgDatos);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "ProductoMan01";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Mantenimiento de Productos";
-            this.Load += new System.EventHandler(this.ProductoMan01_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgDatos)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(995, 510);
+            Controls.Add(txtFiltro);
+            Controls.Add(lblRegistros);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(btnCerrar);
+            Controls.Add(btnEliminar);
+            Controls.Add(btnActualizar);
+            Controls.Add(btnAgregar);
+            Controls.Add(dtgDatos);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "ProductoMan01";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Mantenimiento de Productos";
+            Load += ProductoMan01_Load;
+            ((System.ComponentModel.ISupportInitialize)dtgDatos).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

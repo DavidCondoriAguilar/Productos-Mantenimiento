@@ -155,6 +155,7 @@
     <Compile Include="ProveedorBL.cs" />
     <Compile Include="UbigeoBL.cs" />
     <Compile Include="UnidadMedidaBL.cs" />
+    <Compile Include="UsuarioBL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ProyVentas_ADO\ProyVentas_ADO.csproj">

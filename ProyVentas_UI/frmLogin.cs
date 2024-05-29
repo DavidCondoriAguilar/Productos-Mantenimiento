@@ -32,13 +32,11 @@ namespace ProyVentas_GUI
         {
             if (txtLogin.Text.Trim() != "" && txtPassword.Text.Trim() != "")
             {
-                // Codificar la lógica de autenticación
                 UsuarioBL usuarioBL = new UsuarioBL();
                 UsuarioBE usuarioBE = usuarioBL.ConsultarUsuario(txtLogin.Text.Trim());
 
                 if (usuarioBE != null && usuarioBE.Pass_Usuario == txtPassword.Text.Trim())
                 {
-                    // Aquí puedes agregar el código que se ejecutará si el usuario y la contraseña son correctos
                     MessageBox.Show("Bienvenido", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
                      MDIPrincipal formPrincipal = new MDIPrincipal();
                     formPrincipal.Show();

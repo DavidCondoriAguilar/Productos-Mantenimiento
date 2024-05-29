@@ -55,6 +55,7 @@
     <Compile Include="ProveedorADO.cs" />
     <Compile Include="UbigeoADO.cs" />
     <Compile Include="UnidadMedidaADO.cs" />
+    <Compile Include="UsuarioADO.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ProyVentas_BE\ProyVentas_BE.csproj">

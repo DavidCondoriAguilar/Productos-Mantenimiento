@@ -5,19 +5,18 @@ using System.Text;
 using System.Data;
 using System.Data.SqlClient;
 using ProyVentas_BE;
+
 namespace ProyVentas_ADO
 {
     public class ProveedorADO
     {
         // Insumos.....
-        ConexionADO MiConexion = new ConexionADO();
-        SqlConnection cnx = new SqlConnection();
-        SqlCommand cmd = new SqlCommand();
-        SqlDataReader dtr;
-
+        private readonly ConexionADO MiConexion = new ConexionADO();
+        private readonly SqlConnection cnx = new SqlConnection();
+        private readonly SqlCommand cmd = new SqlCommand();
 
         // Metodos de mantenimiento
-        public Boolean InsertarProveedor(ProveedorBE objProveedorBE)
+        public bool InsertarProveedor(ProveedorBE objProveedorBE)
         {
             try
             {
@@ -27,6 +26,7 @@ namespace ProyVentas_ADO
                 cmd.CommandText = "usp_InsertarProveedor";
 
                 // Agregamos parametros
+                cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@Cod_prv", objProveedorBE.Cod_prv);
                 cmd.Parameters.AddWithValue("@Raz_soc_prv", objProveedorBE.Raz_soc_prv);
                 cmd.Parameters.AddWithValue("@Dir_prv", objProveedorBE.Dir_prv);
@@ -47,8 +47,7 @@ namespace ProyVentas_ADO
             }
             catch (SqlException x)
             {
-                throw new Exception(x.Message);
-                return false;
+                throw new Exception("Error al insertar proveedor: " + x.Message);
             }
             finally
             {
@@ -59,26 +58,38 @@ namespace ProyVentas_ADO
             }
         }
 
-
-        public Boolean ActualizarProveedor(ProveedorBE objProveedorBE)
+        public bool ActualizarProveedor(ProveedorBE objProveedorBE)
         {
-            
             try
             {
-             cnx.ConnectionString = MiConexion.GetCnx();
-            cmd.Connection = cnx;
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.CommandText = "usp_ActualizarProveedor";
-                //Agregamos parametros 
-                //Codifique
+                cnx.ConnectionString = MiConexion.GetCnx();
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_ActualizarProveedor";
 
+                // Agregamos parametros
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@Cod_prv", objProveedorBE.Cod_prv);
+                cmd.Parameters.AddWithValue("@Raz_soc_prv", objProveedorBE.Raz_soc_prv);
+                cmd.Parameters.AddWithValue("@Dir_prv", objProveedorBE.Dir_prv);
+                cmd.Parameters.AddWithValue("@Tel_prv", objProveedorBE.Tel_prv);
+                cmd.Parameters.AddWithValue("@Ruc_prv", objProveedorBE.Ruc_prv);
+                cmd.Parameters.AddWithValue("@Rep_ven", objProveedorBE.Rep_ven);
+                cmd.Parameters.AddWithValue("@Id_Ubigeo", objProveedorBE.Id_Ubigeo);
+                cmd.Parameters.AddWithValue("@Usu_Registro", objProveedorBE.Usu_Registro);
+                cmd.Parameters.AddWithValue("@Est_prv", objProveedorBE.Est_prv);
+                cmd.Parameters.AddWithValue("@Fec_Registro", objProveedorBE.Fec_Registro);
+                cmd.Parameters.AddWithValue("@Fec_Ult_Mod", objProveedorBE.Fec_Ult_Mod);
+                cmd.Parameters.AddWithValue("@Usu_Ult_Mod", objProveedorBE.Usu_Ult_Mod);
 
+                // Abrimos la conexión y ejecutamos el comando
+                cnx.Open();
+                cmd.ExecuteNonQuery();
                 return true;
             }
             catch (SqlException x)
             {
-                throw new Exception(x.Message);
-                return false;
+                throw new Exception("Error al actualizar proveedor: " + x.Message);
             }
             finally
             {
@@ -86,13 +97,10 @@ namespace ProyVentas_ADO
                 {
                     cnx.Close();
                 }
-               
             }
-           
-
         }
 
-        public Boolean EliminarProveedor(String strCod)
+        public bool EliminarProveedor(string strCod)
         {
             try
             {
@@ -102,6 +110,7 @@ namespace ProyVentas_ADO
                 cmd.CommandText = "usp_EliminarProveedor";
 
                 // Agregamos parametros
+                cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@Cod_prv", strCod);
 
                 // Abrimos la conexión y ejecutamos el comando
@@ -111,8 +120,7 @@ namespace ProyVentas_ADO
             }
             catch (SqlException x)
             {
-                throw new Exception(x.Message);
-                return false;
+                throw new Exception("Error al eliminar proveedor: " + x.Message);
             }
             finally
             {
@@ -123,8 +131,7 @@ namespace ProyVentas_ADO
             }
         }
 
-
-        public ProveedorBE ConsultarProveedor(String strCod)
+        public ProveedorBE ConsultarProveedor(string strCod)
         {
             try
             {
@@ -135,6 +142,7 @@ namespace ProyVentas_ADO
                 cmd.CommandText = "usp_ConsultarProveedor";
 
                 // Agregamos parametros
+                cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@Cod_prv", strCod);
 
                 // Abrimos la conexión y ejecutamos el comando
@@ -162,7 +170,7 @@ namespace ProyVentas_ADO
             }
             catch (SqlException ex)
             {
-                throw new Exception(ex.Message);
+                throw new Exception("Error al consultar proveedor: " + ex.Message);
             }
             finally
             {
@@ -172,7 +180,6 @@ namespace ProyVentas_ADO
                 }
             }
         }
-
 
         public DataTable ListarProveedor()
         {
@@ -191,12 +198,8 @@ namespace ProyVentas_ADO
             }
             catch (SqlException ex)
             {
-                throw new Exception(ex.Message);
+                throw new Exception("Error al listar proveedores: " + ex.Message);
             }
         }
-
-
-
-
     }
 }

@@ -28,231 +28,229 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cboCategoria = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.cboUM = new System.Windows.Forms.ComboBox();
-            this.chkActivo = new System.Windows.Forms.CheckBox();
-            this.btnGrabar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.txtStkAct = new System.Windows.Forms.TextBox();
-            this.txtStkMin = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.optNacional = new System.Windows.Forms.RadioButton();
-            this.optImportado = new System.Windows.Forms.RadioButton();
-            this.groupBox1.SuspendLayout();
-            this.SuspendLayout();
+            label1 = new Label();
+            txtDescripcion = new TextBox();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            cboCategoria = new ComboBox();
+            label6 = new Label();
+            cboUM = new ComboBox();
+            chkActivo = new CheckBox();
+            btnGrabar = new Button();
+            btnCancelar = new Button();
+            txtPrecio = new TextBox();
+            txtStkAct = new TextBox();
+            txtStkMin = new TextBox();
+            groupBox1 = new GroupBox();
+            optImportado = new RadioButton();
+            optNacional = new RadioButton();
+            groupBox1.SuspendLayout();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(37, 47);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Descripcion:";
+            label1.AutoSize = true;
+            label1.Location = new Point(37, 47);
+            label1.Name = "label1";
+            label1.Size = new Size(72, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Descripcion:";
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(124, 47);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(389, 23);
-            this.txtDescripcion.TabIndex = 1;
+            txtDescripcion.Location = new Point(124, 47);
+            txtDescripcion.Name = "txtDescripcion";
+            txtDescripcion.Size = new Size(389, 23);
+            txtDescripcion.TabIndex = 0;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(37, 87);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 15);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Precio actual:";
+            label2.AutoSize = true;
+            label2.Location = new Point(37, 87);
+            label2.Name = "label2";
+            label2.Size = new Size(78, 15);
+            label2.TabIndex = 2;
+            label2.Text = "Precio actual:";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(251, 90);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 15);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Stock actual:";
+            label3.AutoSize = true;
+            label3.Location = new Point(251, 90);
+            label3.Name = "label3";
+            label3.Size = new Size(74, 15);
+            label3.TabIndex = 4;
+            label3.Text = "Stock actual:";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(445, 90);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 15);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Stock mínimo:";
+            label4.AutoSize = true;
+            label4.Location = new Point(445, 90);
+            label4.Name = "label4";
+            label4.Size = new Size(84, 15);
+            label4.TabIndex = 6;
+            label4.Text = "Stock mínimo:";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(37, 129);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 15);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Categoria:";
+            label5.AutoSize = true;
+            label5.Location = new Point(37, 129);
+            label5.Name = "label5";
+            label5.Size = new Size(61, 15);
+            label5.TabIndex = 8;
+            label5.Text = "Categoria:";
             // 
             // cboCategoria
             // 
-            this.cboCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboCategoria.FormattingEnabled = true;
-            this.cboCategoria.Location = new System.Drawing.Point(124, 129);
-            this.cboCategoria.Name = "cboCategoria";
-            this.cboCategoria.Size = new System.Drawing.Size(256, 23);
-            this.cboCategoria.TabIndex = 9;
+            cboCategoria.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboCategoria.FormattingEnabled = true;
+            cboCategoria.Location = new Point(124, 129);
+            cboCategoria.Name = "cboCategoria";
+            cboCategoria.Size = new Size(256, 23);
+            cboCategoria.TabIndex = 4;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(37, 173);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 15);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "U. Medida:";
+            label6.AutoSize = true;
+            label6.Location = new Point(37, 173);
+            label6.Name = "label6";
+            label6.Size = new Size(64, 15);
+            label6.TabIndex = 10;
+            label6.Text = "U. Medida:";
             // 
             // cboUM
             // 
-            this.cboUM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboUM.FormattingEnabled = true;
-            this.cboUM.Location = new System.Drawing.Point(124, 170);
-            this.cboUM.Name = "cboUM";
-            this.cboUM.Size = new System.Drawing.Size(256, 23);
-            this.cboUM.TabIndex = 11;
+            cboUM.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboUM.FormattingEnabled = true;
+            cboUM.Location = new Point(124, 170);
+            cboUM.Name = "cboUM";
+            cboUM.Size = new Size(256, 23);
+            cboUM.TabIndex = 5;
             // 
             // chkActivo
             // 
-            this.chkActivo.AutoSize = true;
-            this.chkActivo.Checked = true;
-            this.chkActivo.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkActivo.Location = new System.Drawing.Point(237, 228);
-            this.chkActivo.Name = "chkActivo";
-            this.chkActivo.Size = new System.Drawing.Size(60, 19);
-            this.chkActivo.TabIndex = 13;
-            this.chkActivo.Text = "Activo";
-            this.chkActivo.UseVisualStyleBackColor = true;
+            chkActivo.AutoSize = true;
+            chkActivo.Checked = true;
+            chkActivo.CheckState = CheckState.Checked;
+            chkActivo.Location = new Point(237, 228);
+            chkActivo.Name = "chkActivo";
+            chkActivo.Size = new Size(60, 19);
+            chkActivo.TabIndex = 6;
+            chkActivo.Text = "Activo";
+            chkActivo.UseVisualStyleBackColor = true;
             // 
             // btnGrabar
             // 
-            this.btnGrabar.Location = new System.Drawing.Point(352, 253);
-            this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(103, 30);
-            this.btnGrabar.TabIndex = 14;
-            this.btnGrabar.Text = "Grabar";
-            this.btnGrabar.UseVisualStyleBackColor = true;
-            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
+            btnGrabar.Location = new Point(352, 253);
+            btnGrabar.Name = "btnGrabar";
+            btnGrabar.Size = new Size(103, 30);
+            btnGrabar.TabIndex = 7;
+            btnGrabar.Text = "Grabar";
+            btnGrabar.UseVisualStyleBackColor = true;
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(490, 253);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(103, 30);
-            this.btnCancelar.TabIndex = 15;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            btnCancelar.Location = new Point(490, 253);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(103, 30);
+            btnCancelar.TabIndex = 8;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(124, 84);
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(93, 23);
-            this.txtPrecio.TabIndex = 3;
-            this.txtPrecio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecio_KeyPress);
+            txtPrecio.Location = new Point(124, 84);
+            txtPrecio.Name = "txtPrecio";
+            txtPrecio.Size = new Size(93, 23);
+            txtPrecio.TabIndex = 1;
+            txtPrecio.TextAlign = HorizontalAlignment.Right;
+            txtPrecio.KeyPress += txtPrecio_KeyPress;
             // 
             // txtStkAct
             // 
-            this.txtStkAct.Location = new System.Drawing.Point(343, 87);
-            this.txtStkAct.Name = "txtStkAct";
-            this.txtStkAct.Size = new System.Drawing.Size(62, 23);
-            this.txtStkAct.TabIndex = 5;
-            this.txtStkAct.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtStkAct.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtStkAct_KeyPress);
+            txtStkAct.Location = new Point(343, 87);
+            txtStkAct.Name = "txtStkAct";
+            txtStkAct.Size = new Size(62, 23);
+            txtStkAct.TabIndex = 2;
+            txtStkAct.TextAlign = HorizontalAlignment.Right;
+            txtStkAct.KeyPress += txtStkAct_KeyPress;
             // 
             // txtStkMin
             // 
-            this.txtStkMin.Location = new System.Drawing.Point(535, 87);
-            this.txtStkMin.Name = "txtStkMin";
-            this.txtStkMin.Size = new System.Drawing.Size(62, 23);
-            this.txtStkMin.TabIndex = 7;
-            this.txtStkMin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtStkMin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtStkAct_KeyPress);
+            txtStkMin.Location = new Point(535, 87);
+            txtStkMin.Name = "txtStkMin";
+            txtStkMin.Size = new Size(62, 23);
+            txtStkMin.TabIndex = 3;
+            txtStkMin.TextAlign = HorizontalAlignment.Right;
+            txtStkMin.KeyPress += txtStkAct_KeyPress;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.optImportado);
-            this.groupBox1.Controls.Add(this.optNacional);
-            this.groupBox1.Location = new System.Drawing.Point(37, 218);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(165, 100);
-            this.groupBox1.TabIndex = 12;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Origen";
-            // 
-            // optNacional
-            // 
-            this.optNacional.AutoSize = true;
-            this.optNacional.Checked = true;
-            this.optNacional.Location = new System.Drawing.Point(29, 27);
-            this.optNacional.Name = "optNacional";
-            this.optNacional.Size = new System.Drawing.Size(72, 19);
-            this.optNacional.TabIndex = 0;
-            this.optNacional.TabStop = true;
-            this.optNacional.Text = "Nacional";
-            this.optNacional.UseVisualStyleBackColor = true;
+            groupBox1.Controls.Add(optImportado);
+            groupBox1.Controls.Add(optNacional);
+            groupBox1.Location = new Point(37, 218);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(165, 100);
+            groupBox1.TabIndex = 12;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Origen";
             // 
             // optImportado
             // 
-            this.optImportado.AutoSize = true;
-            this.optImportado.Location = new System.Drawing.Point(29, 64);
-            this.optImportado.Name = "optImportado";
-            this.optImportado.Size = new System.Drawing.Size(81, 19);
-            this.optImportado.TabIndex = 1;
-            this.optImportado.Text = "Importado";
-            this.optImportado.UseVisualStyleBackColor = true;
+            optImportado.AutoSize = true;
+            optImportado.Location = new Point(29, 64);
+            optImportado.Name = "optImportado";
+            optImportado.Size = new Size(81, 19);
+            optImportado.TabIndex = 1;
+            optImportado.Text = "Importado";
+            optImportado.UseVisualStyleBackColor = true;
+            // 
+            // optNacional
+            // 
+            optNacional.AutoSize = true;
+            optNacional.Checked = true;
+            optNacional.Location = new Point(29, 27);
+            optNacional.Name = "optNacional";
+            optNacional.Size = new Size(72, 19);
+            optNacional.TabIndex = 0;
+            optNacional.TabStop = true;
+            optNacional.Text = "Nacional";
+            optNacional.UseVisualStyleBackColor = true;
             // 
             // ProductoMan02
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(668, 349);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.txtStkMin);
-            this.Controls.Add(this.txtStkAct);
-            this.Controls.Add(this.txtPrecio);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnGrabar);
-            this.Controls.Add(this.chkActivo);
-            this.Controls.Add(this.cboUM);
-            this.Controls.Add(this.cboCategoria);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtDescripcion);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "ProductoMan02";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Nuevo producto";
-            this.Load += new System.EventHandler(this.ProductoMan02_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(668, 349);
+            Controls.Add(groupBox1);
+            Controls.Add(txtStkMin);
+            Controls.Add(txtStkAct);
+            Controls.Add(txtPrecio);
+            Controls.Add(btnCancelar);
+            Controls.Add(btnGrabar);
+            Controls.Add(chkActivo);
+            Controls.Add(cboUM);
+            Controls.Add(cboCategoria);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label6);
+            Controls.Add(txtDescripcion);
+            Controls.Add(label5);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "ProductoMan02";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Nuevo producto";
+            Load += ProductoMan02_Load;
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

@@ -1,23 +1,12 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data; // Para los objetos DataTable, DataRow y DataView
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-// Agregar...
-using ProyVentas_BL;
+﻿using ProyVentas_BL;
+using System.Data;
 
 namespace ProyVentas_GUI
 {
     public partial class ProductoMan01 : Form
     {
-        // Instancias
-        ProductoBL objProductoBL = new ProductoBL();
-        DataView dtv;
+        private ProductoBL _productoBL = new ProductoBL();
+        private DataView _dtv;
 
         public ProductoMan01()
         {
@@ -26,49 +15,44 @@ namespace ProyVentas_GUI
 
         private void ProductoMan01_Load(object sender, EventArgs e)
         {
-            //  Invocamos al metodo CargarDatos pasandole una cadena vacia ,
-            //  lo cual hara que se muestren todos los productos por defecto al 
-            //momento de cargar el formulario
-
             CargarDatos("");
-
         }
 
-        private void CargarDatos(String strFiltro)
+        private void CargarDatos(string filtro)
         {
-
-            // Construimos  el objeto Dataview dtv  en base al DataTable devuelto por el metodo ListarProducto
-            // Y lo filtramos de acuerdo al parametro strFiltro
-            dtv = new DataView(objProductoBL.ListarProducto());
-            dtv.RowFilter = "des_pro like '%" + strFiltro + "%'";
-            dtgDatos.DataSource = dtv;
-            lblRegistros.Text = dtgDatos.Rows.Count.ToString();
-            
+            try
+            {
+                _dtv = new DataView(_productoBL.ListarProducto())
+                {
+                    RowFilter = $"des_pro LIKE '%{filtro}%'"
+                };
+                dtgDatos.DataSource = _dtv;
+                lblRegistros.Text = dtgDatos.Rows.Count.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar los datos: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void txtFiltro_TextChanged(object sender, EventArgs e)
         {
-            try
-            {
-                // Pasaremos al metodo CargarDatos el texto que se va escribiendo
-                // en la caja de texto 
-                CargarDatos(txtFiltro.Text.Trim());
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error:" + ex.Message);
-            }
+            CargarDatos(txtFiltro.Text.Trim());
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             try
             {
-                // Codifique
+                using (var objMan02 = new ProductoMan02())
+                {
+                    objMan02.ShowDialog();
+                    CargarDatos(txtFiltro.Text.Trim());
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error:" + ex.Message);
+                MessageBox.Show($"Error al agregar el producto: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -76,13 +60,34 @@ namespace ProyVentas_GUI
         {
             try
             {
-                // Codifique
+                if (dtgDatos.CurrentRow != null)
+                {
+                    // Verificar que el valor de la celda no sea nulo antes de convertirlo
+                    if (dtgDatos.CurrentRow.Cells[0].Value != null)
+                    {
+                        ProductoMan03 objMan03 = new ProductoMan03();
+                        objMan03.Codigo = dtgDatos.CurrentRow.Cells[0].Value.ToString();
+                        objMan03.ShowDialog();
+
+                        // REFRESCAR DATAGRIDVIEW
+                        CargarDatos(txtFiltro.Text.Trim());
+                    }
+                    else
+                    {
+                        MessageBox.Show("El valor seleccionado es nulo.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione un producto para actualizar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error:" + ex.Message);
+                MessageBox.Show($"Error al actualizar el producto: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
+
+
     }
 }

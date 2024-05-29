@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyVentas_UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3cf80e6576973d69ec1443941c6901fdb33d7e5d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProyVentas_UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyVentas_UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
